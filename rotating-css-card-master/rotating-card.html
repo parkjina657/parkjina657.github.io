@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>박진아 | 개인 홈페이지</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+  <link href="css/rotating-card.css" rel="stylesheet" />
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+  <style>
+    body { margin-top: 90px; background: #eef1f4; }
+    .navbar-default .navbar-nav > li > a { padding: 15px 15px; margin: 5px 0; }
+    .navbar-default {
+      padding: 10px 0;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-color: transparent;
+      box-shadow: 0 0px 13px rgba(0,0,0,.2);
+    }
+    .btn-info, .btn-info:hover, .btn-info:focus{
+      color: #FFF !important;
+      background-color: #00bbff !important;
+      border-color: #00bbff !important;
+    }
+    .btn-info { opacity: .85; transition: all 0.1s; -webkit-transition: all 0.1s; }
+    .btn-info:hover, .btn-info:focus { opacity: 1; }
+
+    .title {
+      text-align: center;
+      margin-bottom: 35px;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+    .title small{
+      display: block;
+      margin-top: 12px;
+      font-weight: 400;
+      color: #7f8c8d;
+      letter-spacing: .2px;
+    }
+    .section-note {
+      text-align: center;
+      color: #7f8c8d;
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+    .badge-like{
+      display: inline-block;
+      padding: 6px 10px;
+      background: #f7f9fb;
+      border: 1px solid #e6eaee;
+      border-radius: 999px;
+      margin: 4px 6px 0 0;
+      font-size: 12px;
+      color: #34495e;
+    }
+    .link-row a{
+      display: block;
+      margin: 6px 0;
+      color: #2c3e50;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 1.2;
+      white-space: normal;
+      word-break: break-word;
+    }
+    .link-row a:hover{ text-decoration: underline; }
+    .muted{ color:#95a5a6; }
+
+    .card .footer{
+      padding-top: 8px;
+      padding-bottom: 10px;
+    }
+
+    .projects-back-tight .main{
+      padding-top: 6px;
+    }
+    .projects-back-tight h4{
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+    .projects-back-tight p{
+      font-size: 12.5px;
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+    .projects-back-tight .motto{
+      font-size: 12px;
+      margin: 8px 0 0;
+    }
+    .projects-back-tight .link-row{
+      margin-top: 4px;
+    }
+
+    .card .cover img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+.card .user img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: 60% center;
+}
+
+
+#about .user img{
+  object-fit: cover;
+  object-position: 100% 5%;
+}
+
+
+
+.navbar-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand-logo .logo {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.navbar-brand-logo .logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+  transform: none;
+}
+
+#projects .back .main {
+  padding-top: 0;
+  margin-top: -50px;
+}
+
+#projects .back .footer {
+  margin-top: 80px;
+}
+
+/* 개인 홈페이지 제목 아래 구분선 */
+.title-divider {
+  width: 200px;
+  margin: 16px auto 30px;
+  border: none;
+  border-top: 2px solid #cfd8dc;
+}
+
+.card .name {
+  font-weight: 700;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand navbar-brand-logo" href="javascript:void(0)" data-href="#top" class="scroll-down">
+            <div class="logo">
+              <img src="images/image4.png" alt="logo">
+            </div>
+            <div class="brand"> 박진아</div>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="javascript:void(0)" data-href="#about" class="scroll-down">소개</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" data-href="#skills" class="scroll-down">스킬</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" data-href="#projects" class="scroll-down">프로젝트 & 링크</a>
+            </li>
+            <li>
+              <a class="btn btn-info" href="https://parkjina657.tistory.com" target="_blank" rel="noopener">Tistory 바로가기</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="top" class="row">
+      <h1 class="title">개인 홈페이지</h1>
+<hr class="title-divider">
+
+      <div class="col-sm-10 col-sm-offset-1">
+
+        <!-- 카드 1: 소개 -->
+        <div class="col-md-4 col-sm-6" id="about">
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <div class="cover">
+                  <img src="images/image1.png" alt="cover"/>
+                </div>
+                <div class="user">
+                  <img class="img-circle" src="images/image1.png" alt="profile"/>
+                </div>
+                <div class="content">
+                  <div class="main">
+                    <h3 class="name">박진아</h3>
+                    <p class="profession">소프트웨어융합 전공</p>
+                    <p class="text-center">
+                      안녕하세요! HTML, CSS, JavaScript를 중심으로 실습하며 배우고 있습니다<br>
+                      기초를 탄탄히 다지면서 직접 구현해 보는 과정을 중요하게 생각합니다
+                    </p>
+                  </div>
+                  <div class="footer text-center">
+                    <i class="fa fa-mail-forward"></i> 내 소개 보기
+                  </div>
+                </div>
+              </div>
+
+              <div class="back">
+                <div class="header">
+                  <h5 class="motto">"기록하고, 구현하고, 개선하기"</h5>
+                </div>
+                <div class="content">
+                  <div class="main">
+                    <h4 class="text-center">About</h4>
+                    <p class="text-center">
+                      기본기에 충실한 구현을 좋아하고, 기능을 끝까지 완성하는 걸 목표로 합니다.<br>
+                      프로젝트를 통해 CRUD, UI/UX 개선 등을 반복하며 성장 중입니다.
+                    </p>
+
+                    <div class="stats-container">
+                      <div class="stats">
+                        <h4>2</h4>
+                        <p>주요 프로젝트</p>
+                      </div>
+                      <div class="stats">
+                        <h4>3</h4>
+                        <p>가능 언어</p>
+                      </div>
+                      <div class="stats">
+                        <h4>∞</h4>
+                        <p>업데이트</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="social-links text-center">
+                    <a href="https://parkjina657.tistory.com" target="_blank" rel="noopener" title="Tistory"><i class="fa fa-pencil fa-fw"></i></a>
+                    <a href="https://instagram.com/_j_in_a_" target="_blank" rel="noopener" title="Instagram"><i class="fa fa-instagram fa-fw"></i></a>
+                    <a href="https://github.com/parkjina657" target="_blank" rel="noopener" title="GitHub"><i class="fa fa-github fa-fw"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6" id="skills">
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <div class="cover">
+                  <img src="images/image2.png" alt="cover"/>
+                </div>
+                <div class="user">
+                  <img class="img-circle" src="images/image2.png" alt="profile"/>
+                </div>
+                <div class="content">
+                  <div class="main">
+                    <h3 class="name">Skills</h3>
+                    <p class="profession">가능 언어 / 환경</p>
+                    <p class="text-center">
+                      언어: Python · Java · C
+                    </p>
+                    <div class="text-center">
+                      <span class="badge-like">Python</span>
+                      <span class="badge-like">Java</span>
+                      <span class="badge-like">C</span>
+                      <span class="badge-like">Linux</span>
+                      <span class="badge-like">Git/GitHub</span>
+                      <span class="badge-like">VS Code</span>
+                    </div>
+                  </div>
+                  <div class="footer text-center">
+                    <i class="fa fa-mail-forward"></i> 자세히 보기
+                  </div>
+                </div>
+              </div>
+
+              <div class="back">
+                <div class="header">
+                  <h5 class="motto">"기초를 탄탄하게, 실습으로 확실하게"</h5>
+                </div>
+                <div class="content">
+                  <div class="main">
+                    <h4 class="text-center">Skill Details</h4>
+                    <p class="text-center">
+                      <b>Programming Languages</b><br>
+                      Python / Java / C
+                      <br><br>
+                      <b>Tools & Environment</b><br>
+                      Linux(Unix), Git/GitHub, VS Code
+                    </p>
+
+                    <div class="stats-container">
+                      <div class="stats">
+                        <h4>3</h4>
+                        <p>Languages</p>
+                      </div>
+                      <div class="stats">
+                        <h4>3</h4>
+                        <p>Tools</p>
+                      </div>
+                      <div class="stats">
+                        <h4>+</h4>
+                        <p>Learning</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer text-center">
+                  <i class="fa fa-reply"></i> Back
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 카드 3: 프로젝트 & 링크 -->
+        <div class="col-md-4 col-sm-6" id="projects">
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <div class="cover">
+                  <img src="images/image3.png" alt="cover"/>
+                </div>
+                <div class="user">
+                  <img class="img-circle" src="images/image3.png" alt="profile"/>
+                </div>
+                <div class="content">
+                  <div class="main">
+                    <h3 class="name">Projects</h3>
+                    <p class="profession">지금까지 만든 것</p>
+                    <p class="text-center">
+                      1) 일정관리 웹 만들기<br>
+                      2) Java로 카카오톡 기능 구현하기<br><br>
+                    </p>
+                  </div>
+                  <div class="footer text-center">
+                    <i class="fa fa-mail-forward"></i> 링크/설명 보기
+                  </div>
+                </div>
+              </div>
+
+              <div class="back projects-back-tight">
+                <div class="header">
+                  <h5 class="motto"></h5>
+                </div>
+                <div class="content">
+                  <div class="main">
+                    <h4 class="text-center">Projects</h4>
+                    <p class="text-center">
+                      <b>일정관리 웹 만들기</b><br>
+                      로그인/회원가입, 일정 CRUD, 알림 기능 등을 중심으로 구현
+                      <br><br>
+                      <b>Java로 카카오톡 기능 구현하기</b><br>
+                      Java 기반으로 채팅/유사 메신저 기능 구현 실습
+                    </p>
+
+                    <h4 class="text-center">Links</h4>
+                    <div class="text-center link-row">
+                      <a href="https://parkjina657.tistory.com" target="_blank" rel="noopener">
+                        <i class="fa fa-pencil"></i> Tistory (parkjina657)
+                      </a>
+                      <a href="https://instagram.com/_j_in_a_" target="_blank" rel="noopener">
+                        <i class="fa fa-instagram"></i> Instagram (_j_in_a_)
+                      </a>
+                      <a href="https://github.com/parkjina657" target="_blank" rel="noopener">
+                        <i class="fa fa-github"></i> GitHub (parkjina657)
+                      </a>
+                    </div>
+
+                    <p class="text-center muted" style="margin-top:6px; font-size:12px;">
+                      프로젝트 상세 설명/스크린샷은 추후 추가 예정
+                    </p>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="social-links text-center">
+                    <a href="https://parkjina657.tistory.com" target="_blank" rel="noopener"><i class="fa fa-pencil fa-fw"></i></a>
+                    <a href="https://instagram.com/_j_in_a_" target="_blank" rel="noopener"><i class="fa fa-instagram fa-fw"></i></a>
+                    <a href="https://github.com/parkjina657" target="_blank" rel="noopener"><i class="fa fa-github fa-fw"></i></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /col -->
+    </div><!-- /row -->
+  </div><!-- /container -->
+
+  <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $().ready(function () {
+      $('[rel="tooltip"]').tooltip();
+
+      $('a.scroll-down').click(function (e) {
+        e.preventDefault();
+        var scroll_target = $(this).data('href');
+        if (!scroll_target) return;
+        $('html, body').animate({
+          scrollTop: $(scroll_target).offset().top - 75
+        }, 700);
+      });
+    });
+
+    function rotateCard(btn) {
+      var $card = $(btn).closest('.card-container');
+      if ($card.hasClass('hover')) {
+        $card.removeClass('hover');
+      } else {
+        $card.addClass('hover');
+      }
+    }
+  </script>
+</body>
+</html>
